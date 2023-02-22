@@ -17,6 +17,19 @@ class SeederTrainTable extends Seeder
      */
     public function run(Faker $faker)
     {
-        //
+        for ($i=0; $i<10; $i++) { 
+            
+            $newTrain = new Train();
+            $newTrain->azienda = $faker->word();
+            $newTrain->stazione_partenza = $faker->word();
+            $newTrain->stazione_arrivo = $faker->word();
+            $newTrain->orario_partenza = $faker->time('H_i');
+            $newTrain->orario_arrivo = $faker->time('H_i');
+            $newTrain->codice_treno = $faker->lexify('ct-????');
+            $newTrain->num_carrozze = $faker->randomNumber(3, true);
+
+            $newTrain->save();
+
+        }
     }
 }
