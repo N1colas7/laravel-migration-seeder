@@ -14,7 +14,7 @@
 
 <body>
 
-    <H1>Ciao</H1>
+    <p>{{ $train }}</p>
 
 </body>
 
