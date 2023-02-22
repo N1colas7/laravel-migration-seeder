@@ -14,7 +14,7 @@
 
 <body>
 
-    <H1>ciao</H1>
+    <H1>{{ azienda }}</H1>
 
 </body>
 
